@@ -12,7 +12,7 @@ class Car:
 
 # Create an instance of the Car class
 my_car = Car("Mercedes Benz", "A class", 2024,120000)
-print(my_car.start_engine())
+# print(my_car.start_engine())
 
 class BankAccount:
     def __init__(self, balance=0):
@@ -81,14 +81,15 @@ def tearDown(self):
 
 def promotion(self):
     cash = self.pay * 15
-    return f"Congratulations, you have been promoted with a bonus of {cash}"
+    name = self.first
+    return f"Congratulations {name}, you have been promoted with a bonus of {cash}"
 
 def Compound(self):
     pa = self.pay   # principal amount
-    r = 6.2%  # interest rate
-    t = int(input()) # time in years
+    r = 6.2  # interest rate
+    t = 3 # time in years
     Total = pa* pow((1 + r/100), t)
-    print(f"Balance ")
+    print(f"Balance after {t} year/s:{Total} ")
 
 def End(self):
     Deadline = datetime.date(2024,3,20)
@@ -102,7 +103,6 @@ def End(self):
 def car_deal(self,pay):
     # Assuming these are attributes of 'self' or defined elsewhere
     employees = [emp_1, emp_2, emp_3, mgr_1]
-
     for employee in employees:
         if self.pay < my_car:
             print("Insufficient funds, please withdraw money")
@@ -110,7 +110,6 @@ def car_deal(self,pay):
         else:
             print("You have won the car prize")
             return employee
-
     # If we exit the loop without winning, print a final message
     print("No winner.")
-    return None
+
