@@ -17,16 +17,13 @@ print(my_car.start_engine())
 class BankAccount:
     def __init__(self, balance=0):
         self._balance = balance  # Encapsulated attribute (protected by convention)
-
     def deposit(self, amount):
         self._balance += amount
-
     def withdraw(self, amount):
         if amount <= self._balance:
             self._balance -= amount
         else:
             print("Insufficient funds")
-
     def get_balance(self):
         return self._balance
 
@@ -69,7 +66,6 @@ class Manager(Employee,BankAccount):
 emp_1 = Employee('Liam', 'Stash', 46000)
 emp_2 = Employee('Maria', 'Gonzalez', 50000)
 emp_3 = Employee('Gift', 'Ayo', 70000)
-
 mgr_1= Manager('Saito', 'Hajime',120000, [emp_1])
 
 
@@ -88,6 +84,11 @@ def promotion(self):
     return f"Congratulations, you have been promoted with a bonus of {cash}"
 
 def Compound(self):
+    pa = self.pay   # principal amount
+    r = 6.2%  # interest rate
+    t = int(input()) # time in years
+    Total = pa* pow((1 + r/100), t)
+    print(f"Balance ")
 
 def End(self):
     Deadline = datetime.date(2024,3,20)
