@@ -41,9 +41,6 @@ def find_double(bloc):
     return slow
 
 
-num = [4,3,2,7,8,6,9,2,1,5,2]
-result = LinkedList(num)
-print(result)
 
 
 
